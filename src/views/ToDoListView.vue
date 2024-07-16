@@ -29,7 +29,17 @@
 
 <template>
   <main>
-    <h1 v-if="errMsg"> {{ errMsg }} </h1>
+    <div v-if="errMsg" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Error</strong>
+        <small>Just now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        {{ errMsg }}
+      </div>
+    </div>
+
     <ul>
       <li list-style-type: none v-for="task in todos">
         <Task :task="task"/>
@@ -40,6 +50,6 @@
 
 <style scoped>
 ul {
-  list-style-type: none
+  list-style: none;
 }
 </style>

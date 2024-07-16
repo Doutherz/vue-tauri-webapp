@@ -1,11 +1,8 @@
 <template>
-  <div class="task-item">
-    <div class="task-id">{{ task.id }}</div>
-    <label class="task-checkbox">
-      <input type="checkbox" v-model="task.isComplete">
-      <span class="checkbox-custom"></span>
-    </label> 
-    <div class="task-details">
+  <div class="task-item p-0">
+    <div class="bg-dark p-2 m-0 text-white rounded-end">{{ task.id }}</div>
+    <input class="form-check-input m-3 p-3" type="checkbox" v-model="task.is_complete">
+    <div class="task-details p-3 border-start bg-white">
       <div class="task-title">{{ task.title }}</div>
       <div class="task-content">{{ task.task }}</div>
     </div>
@@ -29,6 +26,7 @@ defineProps({
   width: 20px;
   height: 20px;
   margin: 10px;
+  padding: 10px;
   cursor: pointer;
 }
 
