@@ -19,11 +19,11 @@ npm install
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+npm run tauri dev
 ```
 
 ### Compile and Minify for Production
 
-```sh
-npm run build
-```
+# Build the project
+npm run tauri build
+
