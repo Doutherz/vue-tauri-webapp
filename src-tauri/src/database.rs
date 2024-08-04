@@ -34,3 +34,27 @@ pub fn fetch_todo(conn:Connection) -> Result<Vec<Task>>{
     }).and_then(|task_iter| task_iter.collect::<Result<Vec<Task>>>())?;
     Ok(tasks)
 }
+
+pub fn remove_task(conn:Connection, id:&i32) -> Result<()>{
+    conn.execute(
+        "DELETE FROM todo WHERE ID = ?",
+        params![id]
+    )?;
+    Ok(())
+}
+
+pub fn complete_task(conn:Connection, id:&i32) -> Result<()>{
+    conn.execute(
+        "UPDATE todo SET is_complete = 1 WHERE id = ?",
+        params![id]
+    )?;
+    Ok(())
+}
+
+pub fn uncomplete_task(conn:Connection, id:&i32) -> Result<()>{
+    conn.execute(
+        "UPDATE todo SET is_complete = 0 WHERE id = ?",
+        params![id]
+    )?;
+    Ok(())
+}
