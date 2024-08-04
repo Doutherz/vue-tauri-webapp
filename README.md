@@ -23,7 +23,7 @@ npm run tauri dev
 ```
 
 ### Compile and Minify for Production
-
-# Build the project
+```sh
 npm run tauri build
+```
 
