@@ -1,14 +1,23 @@
 # vue-rust-project
 
-This template should help get you started developing with Vue 3 in Vite.
+## Installation
 
-## Recommended IDE Setup
+### Prerequisites
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Make sure you have the following software installed:
 
-## Customize configuration
+- [Rust](https://www.rust-lang.org/tools/install)
+- [Node.js](https://nodejs.org/)
+- [Tauri CLI](https://tauri.app/v1/guides/getting-started/prerequisites/)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+### Clone the Repository
+
+Clone the repository to your local machine using:
+
+```sh
+git clone https://github.com/your-username/your-repository.git
+cd your-repository
+```
 
 ## Project Setup
 
