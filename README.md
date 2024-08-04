@@ -15,8 +15,8 @@ Make sure you have the following software installed:
 Clone the repository to your local machine using:
 
 ```sh
-git clone https://github.com/your-username/your-repository.git
-cd your-repository
+git clone https://github.com/Doutherz/vue-tauri-webapp.git
+cd vue-tauri-webapp
 ```
 
 ## Project Setup
